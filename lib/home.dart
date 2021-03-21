@@ -12,7 +12,7 @@ class _HomeWidgetState extends State<HomeWidget> {
     return ListView.builder(
       padding: EdgeInsets.all(16),
       itemBuilder: (context, i) {
-        return ComicsListItemWidget();
+        return ComicsListItemWidget("Title $i", "Description $i");
       }
     );
   }
