@@ -38,7 +38,16 @@ class _MainWidgetState extends State<MainWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Marvel Comics")),
+      appBar: AppBar(
+        title: Text(
+          "Marvel Comics", 
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold
+          ),
+        ),
+        centerTitle: false,
+      ),
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: [
