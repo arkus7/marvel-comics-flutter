@@ -61,6 +61,12 @@ class _SearchWidgetState extends State<SearchWidget> {
         ),
         child: SearchBar<ComicBook>(
             hintText: Strings.searchBarPlaceholder,
+            loader: Center(
+              child: CircularProgressIndicator(
+                valueColor: AlwaysStoppedAnimation(Colors.red),
+                strokeWidth: 10,
+              ),
+            ),
             placeHolder: emptyResultsView(Strings.searchPlaceholderViewText),
             emptyWidget: emptyResultsView(Strings.noSearchResults(searchQuery)),
             onSearch: search,
