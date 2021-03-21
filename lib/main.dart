@@ -56,10 +56,12 @@ class _MainWidgetState extends State<MainWidget> {
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search), 
+            icon: Icon(Icons.search),
             label: "Search"
           )
         ],
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.red,
         onTap: _onItemTapped,
