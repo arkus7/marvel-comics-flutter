@@ -28,7 +28,7 @@ class ComicsListItemWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    title,
+                    title ?? "",
                     style: Theme.of(context).textTheme.headline6,
                   ),
                   Padding(
@@ -43,7 +43,7 @@ class ComicsListItemWidget extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    description,
+                    description ?? "",
                     softWrap: true,
                     overflow: TextOverflow.fade,
                     maxLines: 5,
