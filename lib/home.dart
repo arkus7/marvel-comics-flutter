@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marvel_comics/comic_card.dart';
+import 'package:marvel_comics/comics_list_item.dart';
 
 class HomeWidget extends StatefulWidget {
   @override
