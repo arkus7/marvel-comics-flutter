@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marvel_comics/comic_card.dart';
 
 class HomeWidget extends StatefulWidget {
   @override
@@ -8,6 +9,11 @@ class HomeWidget extends StatefulWidget {
 class _HomeWidgetState extends State<HomeWidget> {
   @override
   Widget build(BuildContext context) {
-    return Text("HomeWidget");
+    return ListView.builder(
+      padding: EdgeInsets.all(16),
+      itemBuilder: (context, i) {
+        return ComicsListItemWidget();
+      }
+    );
   }
 }
