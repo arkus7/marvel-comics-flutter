@@ -4,12 +4,12 @@ class ComicsListItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      clipBehavior: Clip.antiAlias,
       child: Row(
         children: [
           Image.asset(
             'assets/images/cover.jpeg',
             height: 185,
-            width: 120,
           ),
           Expanded(
             child: Container(
